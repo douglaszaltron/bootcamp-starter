@@ -1,15 +1,10 @@
-class Usuario {
+let alfa = 'abc'
+let text = 'texto de exemplo'
 
-  get nome (){
-    return this._nome
-  }
+console.log( alfa.repeat(5) )
 
-  set nome(nome) {
-    this._nome = nome
-  }
+console.log( text.includes('exemplo') )
+console.log( text.includes('de', 6) )
 
-}
-
-const usuario = new Usuario()
-usuario.nome = 'Douglas'
-console.log (`Meu nome é ${usuario.nome}`)
+console.log( text.startsWith('texto') ) 
+console.log( text.endsWith('exemplo') )
