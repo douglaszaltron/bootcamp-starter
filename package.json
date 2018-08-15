@@ -1,0 +1,17 @@
+{
+  "name": "curso-adonisjs-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/douglaszaltron/curso-adonisjs-es6.git",
+  "author": "Douglas <douglaszaltron@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "dev": "npx babel ./main.js -o ./bundle.js -w"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1"
+  }
+}
