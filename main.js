@@ -1,10 +1,15 @@
-const nome = 'Douglas'
-const idade = 31
+class Usuario {
 
-const usuario = {
-  nome,
-  idade,
-  empresa: 'Shippack',
+  get nome (){
+    return this._nome
+  }
+
+  set nome(nome) {
+    this._nome = nome
+  }
+
 }
 
-console.log(usuario)
+const usuario = new Usuario()
+usuario.nome = 'Douglas'
+console.log (`Meu nome é ${usuario.nome}`)
