@@ -1,49 +1,13 @@
-// Class simples
-class TodoList {
-    constructor() {
-        this.todos = []
-    }
+const usuario = { nome: 'Douglas' }
+usuario.nome = 'Douglas Zaltron'
+console.log(usuario)
 
-    addTodo() {
-        this.todos.push('Novo todo')
-        console.log(this.todos)
-    }
-}
+function teste(x) {
+    let y = 2
 
-const MinhaLista1 = new TodoList()
-
-// Class extends
-class List {
-    constructor() {
-        this.data = []
-    }
-
-    add(data) {
-        this.data.push(data)
-        console.log(this.data)
+    if (x > 5) {
+        console.log(x, y)
     }
 }
 
-class TodoList2 extends List {
-    constructor() {
-        super() // Herança
-        this.usuario = 'Douglas'
-    }
-
-    mostraUsuario() {
-        console.log(this.usuario)
-    }
-}
-
-const MinhaLista2 = new TodoList2()
-
-MinhaLista2.mostraUsuario()
-
-// Class static
-class Matematica {
-    static soma(a, b) {
-        return a + b
-    }
-}
-
-console.log(Matematica.soma(1, 2))
+teste(10)
