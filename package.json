@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/douglaszaltron/curso-adonisjs-es6.git",
-  "author": "Douglas <douglaszaltron@gmail.com>",
+  "author": "Douglas Zaltron <douglaszaltron@gmail.com>",
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "dev": "npx babel ./main.js -o ./bundle.js -w"
+    "dev": "npx babel ./main.js -o ./bundle.js -w",
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-rc.1",
     "@babel/core": "^7.0.0-rc.1",
-    "@babel/preset-env": "^7.0.0-rc.1"
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
