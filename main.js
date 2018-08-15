@@ -1,13 +1,26 @@
-const usuario = { nome: 'Douglas' }
-usuario.nome = 'Douglas Zaltron'
-console.log(usuario)
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-function teste(x) {
-    let y = 2
+const newArr = arr.map(function(item, index){
+    return item + index
+   
+})
 
-    if (x > 5) {
-        console.log(x, y)
-    }
-}
+console.log(newArr)
 
-teste(10)
+const sum = arr.reduce(function(total, next){
+    return total + next;
+})
+
+console.log(sum)
+
+const filter = arr.filter(function( item ){
+    return item % 2 === 0
+}) 
+
+console.log(filter)
+
+const find = arr.find(function(item){
+    return item === 1
+})
+
+console.log (find)
