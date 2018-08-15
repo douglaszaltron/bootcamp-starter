@@ -1,9 +1,6 @@
-console.log(Number.isNaN(12))
-console.log(Number.isNaN(0/0))
+var pessoa = { nome: 'Douglas' }
+var idade = { idade: 31 }
 
-console.log(Number.isFinite(Infinity))
-console.log(Number.isFinite(90))
+Object.assign( pessoa, idade )
 
-console.log(Number.isInteger(10))
-console.log(Number.isInteger('abc'))
-console.log(Number.isInteger(3.1416))
+console.log( pessoa )
