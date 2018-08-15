@@ -1,10 +1,9 @@
-let alfa = 'abc'
-let text = 'texto de exemplo'
+console.log(Number.isNaN(12))
+console.log(Number.isNaN(0/0))
 
-console.log( alfa.repeat(5) )
+console.log(Number.isFinite(Infinity))
+console.log(Number.isFinite(90))
 
-console.log( text.includes('exemplo') )
-console.log( text.includes('de', 6) )
-
-console.log( text.startsWith('texto') ) 
-console.log( text.endsWith('exemplo') )
+console.log(Number.isInteger(10))
+console.log(Number.isInteger('abc'))
+console.log(Number.isInteger(3.1416))
