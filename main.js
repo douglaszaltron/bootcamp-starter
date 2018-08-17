@@ -1,7 +1,5 @@
-const promise = new Promise((resolve, reject) => {
-  const FLAG = 5
+import { soma, subtracao } from './funcoes'
 
-  if (FLAG === 5) { setTimeout(resolve, 4000, 'Tudo pronto') } else { reject(Error('Algo deu errado!')) }
-})
+console.log(soma(1, 2))
 
-promise.then(response => console.log(response)).catch(reason => console.log(reason))
+console.log(subtracao(3, 2))
