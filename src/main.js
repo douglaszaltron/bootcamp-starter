@@ -1,9 +1,14 @@
-const aguarda = () => new Promise((resolve) => {
-  setTimeout(() => { resolve('OK') }, 2000)
-})
+import axios from 'axios'
 
-const executa = async () => {
-  console.log(await aguarda())
+class Api {
+  static async getUserInfo (username) {
+    try {
+      const response = await axios.get(`https://api.github.com/users/${username}`)
+      console.log(response.data)
+    } catch (error) {
+      console.log(`Reason: ${error}`)
+    }
+  }
 }
 
-executa()
+Api.getUserInfo('douglaszaltron')

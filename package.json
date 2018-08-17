@@ -6,7 +6,8 @@
   "author": "Douglas Zaltron <douglaszaltron@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.1"
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.1",
+    "axios": "^0.18.0"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
