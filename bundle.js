@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./calc.js":
+/*!*****************!*\
+  !*** ./calc.js ***!
+  \*****************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.soma = soma;\nexports.subtracao = subtracao;\nexports.divisao = divisao;\nexports.multiplicacao = multiplicacao;\n\nfunction soma(a, b) {\n  return a + b;\n}\n\nfunction subtracao(a, b) {\n  return a - b;\n}\n\nfunction divisao(a, b) {\n  return a / b;\n}\n\nfunction multiplicacao(a, b) {\n  return a * b;\n}\n\n//# sourceURL=webpack:///./calc.js?");
+
+/***/ }),
+
 /***/ "./funcoes.js":
 /*!********************!*\
   !*** ./funcoes.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.soma = soma;\nexports.subtracao = subtracao;\n\nfunction soma(a, b) {\n  return a + b;\n}\n\nfunction subtracao(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = log;\nexports.error = error;\n\nfunction log(text) {\n  console.log('Log: ', text);\n}\n\nfunction error(text) {\n  console.log('Error: ', text);\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
 
 /***/ }),
 
@@ -106,7 +118,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _funcoes = __webpack_require__(/*! ./funcoes */ \"./funcoes.js\");\n\nconsole.log((0, _funcoes.soma)(1, 2));\nconsole.log((0, _funcoes.subtracao)(3, 2));\n\n//# sourceURL=webpack:///./main.js?");
+eval("\n\nvar _funcoes = _interopRequireWildcard(__webpack_require__(/*! ./funcoes */ \"./funcoes.js\"));\n\nvar calc = _interopRequireWildcard(__webpack_require__(/*! ./calc */ \"./calc.js\"));\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }\n\n(0, _funcoes.default)(calc.soma(1, 2));\n(0, _funcoes.default)(calc.subtracao(3, 2));\n(0, _funcoes.error)(calc.divisao(3, 0));\n(0, _funcoes.default)(calc.multiplicacao(2, 3));\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
